@@ -25,7 +25,7 @@ setup(
         'casscache==0.0.0'
     ],
     dependency_links=[
-        'https://github.com/mattrobenolt/python-casscache/archive/41241386afaf190478299eee394a73a7b792b811.zip#egg=casscache-0.0.0',
+        'https://github.com/mattrobenolt/python-casscache/archive/646ec5007bcebdf4b6479600b6d9a0bf7a2f294e.zip#egg=casscache-0.0.0',
     ],
     py_modules=['django_casscache'],
     zip_safe=True,
