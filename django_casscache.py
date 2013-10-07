@@ -35,3 +35,10 @@ class CasscacheCache(BaseMemcachedCache):
         # Lol, Django wants to close the connection after every request.
         # This is 100% not needed for Cassandra.
         pass
+
+
+def noop_make_key(key, *args, **kwargs):
+    """
+    For use with KEY_FUNCTION, to not alter the key name at all.
+    """
+    return key
