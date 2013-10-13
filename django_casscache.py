@@ -20,12 +20,7 @@ class CasscacheCache(BaseMemcachedCache):
     @property
     def _cache(self):
         if getattr(self, '_client', None) is None:
-            keyspace = self._options.pop('keyspace')
-            columnfamily = self._options.pop('columnfamily')
-            self._client = self._lib.Client(self._servers,
-                                            keyspace=keyspace,
-                                            columnfamily=columnfamily,
-                                            **self._options)
+            self._client = self._lib.Client(self._servers, **self._options)
         return self._client
 
     def _get_memcache_timeout(self, timeout):
