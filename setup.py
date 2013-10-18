@@ -3,7 +3,7 @@
 django-casscache
 ~~~~~~~~~~~~~~~~
 
-lol
+Django backend for python-casscache
 
 :copyright: (c) 2013 by Matt Robenolt.
 :license: BSD, see LICENSE for more details.
@@ -13,19 +13,16 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-casscache',
-    version='0.0.0',
+    version='0.0.1',
     author='Matt Robenolt',
     author_email='matt@ydekproductions.com',
     url='https://github.com/mattrobenolt/django-casscache',
-    description='lol',
+    description='Django backend for python-casscache',
     license='BSD',
     long_description=__doc__,
     packages=find_packages(exclude=['tests']),
     install_requires=[
-        'casscache==0.0.0'
-    ],
-    dependency_links=[
-        'https://github.com/mattrobenolt/python-casscache/archive/e7f50a649db4af9844234ec14d5ad5541419e809.zip#egg=casscache-0.0.0',
+        'casscache==0.0.1',
     ],
     py_modules=['django_casscache'],
     zip_safe=True,
