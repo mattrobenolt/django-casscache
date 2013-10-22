@@ -13,7 +13,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-casscache',
-    version='0.0.1',
+    version='0.0.2',
     author='Matt Robenolt',
     author_email='matt@ydekproductions.com',
     url='https://github.com/mattrobenolt/django-casscache',
@@ -22,7 +22,7 @@ setup(
     long_description=__doc__,
     packages=find_packages(exclude=['tests']),
     install_requires=[
-        'casscache==0.0.1',
+        'casscache==0.0.2',
     ],
     py_modules=['django_casscache'],
     zip_safe=True,
