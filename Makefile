@@ -3,6 +3,6 @@ clean:
 	rm -rf dist
 
 publish:
-	python setup.py sdist upload
+	python setup.py sdist bdist_wheel upload
 
 .PHONY: clean publish
